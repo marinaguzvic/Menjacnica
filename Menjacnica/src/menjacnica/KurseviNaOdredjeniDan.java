@@ -21,7 +21,7 @@ public class KurseviNaOdredjeniDan {
 		return datum;
 	}
 	
-	public void setDatum(Date datum) {
-		this.datum = datum;
+	public void setDatum() {
+		this.datum = new Date();
 	}
 }
