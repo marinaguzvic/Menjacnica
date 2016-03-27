@@ -9,6 +9,7 @@ public class Valuta {
 	}
 	
 	public void setNaziv(String naziv) {
+		if(naziv == null || naziv == "") throw new RuntimeException("Nazvi ne sme biti null niti prazan string!");
 		this.naziv = naziv;
 	}
 	
@@ -17,6 +18,7 @@ public class Valuta {
 	}
 	
 	public void setSkraceniNaziv(String skraceniNaziv) {
+		if(skraceniNaziv == null || naziv == "") throw new RuntimeException("Nazvi ne sme biti null niti prazan string!");
 		this.skraceniNaziv = skraceniNaziv;
 	}
 

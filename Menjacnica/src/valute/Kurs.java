@@ -12,6 +12,7 @@ public class Kurs {
 	}
 	
 	public void setValuta1(Valuta valuta1) {
+		if(valuta1 == null) throw new RuntimeException("Valuta ne sme da bude null!");
 		this.valuta1 = valuta1;
 	}
 	
@@ -20,6 +21,7 @@ public class Kurs {
 	}
 	
 	public void setValuta2(Valuta valuta2) {
+		if(valuta2 == null) throw new RuntimeException("Valuta ne sme da bude null!");
 		this.valuta2 = valuta2;
 	}
 	
@@ -28,6 +30,7 @@ public class Kurs {
 	}
 	
 	public void setProdajni(double prodajni) {
+		if(prodajni <= 0) throw new RuntimeException("Kurs ne sme biti manji od nule!");
 		this.prodajni = prodajni;
 	}
 	
@@ -36,6 +39,7 @@ public class Kurs {
 	}
 	
 	public void setKupovni(double kupovni) {
+		if(kupovni <= 0) throw new RuntimeException("Kurs ne sme biti manji od nule!");
 		this.kupovni = kupovni;
 	}
 	
@@ -44,6 +48,7 @@ public class Kurs {
 	}
 	
 	public void setSrednji(double srednji) {
+		if(srednji <= 0) throw new RuntimeException("Kurs ne sme biti manji od nule!");
 		this.srednji = srednji;
 	}
 
