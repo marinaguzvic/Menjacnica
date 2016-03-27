@@ -78,12 +78,6 @@ public class Kurs {
 		if (getClass() != obj.getClass())
 			return false;
 		Kurs other = (Kurs) obj;
-		if (Double.doubleToLongBits(kupovni) != Double.doubleToLongBits(other.kupovni))
-			return false;
-		if (Double.doubleToLongBits(prodajni) != Double.doubleToLongBits(other.prodajni))
-			return false;
-		if (Double.doubleToLongBits(srednji) != Double.doubleToLongBits(other.srednji))
-			return false;
 		if (valuta1 == null) {
 			if (other.valuta1 != null)
 				return false;
