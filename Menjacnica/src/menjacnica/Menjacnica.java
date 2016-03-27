@@ -12,7 +12,9 @@ public class Menjacnica implements MenjacnicaInterfejs{
 
 	@Override
 	public void dodajKurs(Kurs kurs, Date dan) {
-		// TODO Auto-generated method stub
+		dani.add(new KurseviNaOdredjeniDan());
+		dani.getLast().setDatum(new Date());
+		dani.getLast().getKursevi().add(kurs);
 		
 	}
 
